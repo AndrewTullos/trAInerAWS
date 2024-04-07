@@ -84,13 +84,16 @@ function GetStartedForm() {
     }
 
     try {
-      const response = await fetch(`http://localhost:3001/submit-form`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      const response = await fetch(
+        `https://11hvmblcl8.execute-api.us-west-1.amazonaws.com/prod/express/submit-form`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
         },
-        body: JSON.stringify(formData),
-      })
+      )
 
       if (!response.ok) {
         throw new Error(`Error - $response.statusText`)
