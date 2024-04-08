@@ -88,6 +88,7 @@ function GetStartedForm() {
         `https://11hvmblcl8.execute-api.us-west-1.amazonaws.com/prod/express/submit-form`,
         {
           method: 'POST',
+          mode: 'no-cors', 
           headers: {
             'Content-Type': 'application/json',
           },
