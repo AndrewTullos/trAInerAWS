@@ -15,7 +15,8 @@ import { unifiedConditional } from 'unified-conditional'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   // ADDED THIS FOR AWS
-  output: 'export',
+  // output: 'export',
+  target: 'experimental-serverless-trace',
 }
 
 function remarkMDXLayout(source, metaName) {
