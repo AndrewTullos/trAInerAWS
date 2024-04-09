@@ -85,10 +85,9 @@ function GetStartedForm() {
 
     try {
       const response = await fetch(
-        `https://pfrp0a2nh4.execute-api.us-west-1.amazonaws.com/prod2/submit-form`,
+        `https://11hvmblcl8.execute-api.us-west-1.amazonaws.com/prod/express/submit-form`,
         {
           method: 'POST',
-          mode: 'no-cors', 
           headers: {
             'Content-Type': 'application/json',
           },
@@ -160,7 +159,7 @@ function GetStartedForm() {
           </div>
 
           {/* Height Input */}
-          <div className="border border-neutral-300 px-6 py-8 text-neutral-50 first:rounded-t-2xl last:rounded-b-2xl">
+          <div className="border border-neutral-300 px-6 py-8 text-neutral-500 first:rounded-t-2xl last:rounded-b-2xl">
             <legend className="text-base/6 text-neutral-50">Height</legend>
             <select
               name="height"
