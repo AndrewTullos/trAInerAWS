@@ -85,7 +85,7 @@ function GetStartedForm() {
 
     try {
       const response = await fetch(
-        `https://11hvmblcl8.execute-api.us-west-1.amazonaws.com/prod`,
+        `https://11hvmblcl8.execute-api.us-west-1.amazonaws.com/prod/submit-form`,
         {
           method: 'POST',
           mode: 'no-cors', 
