@@ -85,7 +85,7 @@ function GetStartedForm() {
 
     try {
       const response = await fetch(
-        `http://l1hdya750g.execute-api.us-west-1.amazonaws.com/prod/submit-form`,
+        `https://pfrp0a2nh4.execute-api.us-west-1.amazonaws.com/prod2/submit-form`,
         
         {
           method: 'POST',
